@@ -1,0 +1,6 @@
+{
+  "name": "Resume Scorer - AI-Powered ATS Diagnostic Engine",
+  "description": "Benchmark, score, and optimize your resume against any job description with real-time 5-axis competency radar, ATS format audit, and bullet-by-bullet rewrites in light and dark mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

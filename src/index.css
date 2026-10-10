@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-surface: #f8f9ff;
+    --bg-surface-lowest: #ffffff;
+    --bg-surface-low: #f1f5fd;
+    --bg-surface-container: #e5eeff;
+    --text-on-surface: #0b1c30;
+    --text-on-surface-variant: #434655;
+    --text-slate-body: #334155;
+    --text-slate-label: #475569;
+    --text-slate-muted: #94a3b8;
+    --border-slate: #e2e8f0;
+    --color-primary: #004ac6;
+    --color-primary-container: #2563eb;
+    --color-status-pass: #16a34a;
+    --color-status-review: #d97706;
+    --color-status-gap: #dc2626;
+  }
+
+  .dark {
+    --bg-surface: #090e17;
+    --bg-surface-lowest: #101827;
+    --bg-surface-low: #152033;
+    --bg-surface-container: #1e2c45;
+    --text-on-surface: #f8fafc;
+    --text-on-surface-variant: #cbd5e1;
+    --text-slate-body: #94a3b8;
+    --text-slate-label: #64748b;
+    --text-slate-muted: #64748b;
+    --border-slate: #1e293b;
+    --color-primary: #3b82f6;
+    --color-primary-container: #2563eb;
+    --color-status-pass: #22c55e;
+    --color-status-review: #f59e0b;
+    --color-status-gap: #ef4444;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-surface);
+    color: var(--text-on-surface);
+    min-height: 100vh;
+  }
+}
+
+/* Custom Design System Tokens */
+.bg-surface { background-color: var(--bg-surface); }
+.bg-surface-container-lowest { background-color: var(--bg-surface-lowest); }
+.bg-surface-container-low { background-color: var(--bg-surface-low); }
+.bg-surface-container { background-color: var(--bg-surface-container); }
+
+.text-on-surface { color: var(--text-on-surface); }
+.text-on-surface-variant { color: var(--text-on-surface-variant); }
+.text-slate-body { color: var(--text-slate-body); }
+.text-slate-label { color: var(--text-slate-label); }
+.text-slate-muted { color: var(--text-slate-muted); }
+
+.border-slate-border { border-color: var(--border-slate); }
+
+.bg-primary { background-color: var(--color-primary); }
+.text-primary { color: var(--color-primary); }
+.bg-primary-container { background-color: var(--color-primary-container); }
+.text-on-primary { color: #ffffff; }
+
+.text-status-pass { color: var(--color-status-pass); }
+.bg-status-pass { background-color: var(--color-status-pass); }
+.text-status-review { color: var(--color-status-review); }
+.bg-status-review { background-color: var(--color-status-review); }
+.text-status-gap { color: var(--color-status-gap); }
+.bg-status-gap { background-color: var(--color-status-gap); }
+
+/* Typography helper classes */
+.font-display-hero {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+.font-headline-score {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+.font-headline-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-headline-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+.font-headline-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-label-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+.font-label-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+.font-label-caps {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.font-body-lg {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.font-body-md {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.font-body-sm {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.font-metric-tabular {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Material Symbols alignment */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* Print Styles for Export PDF */
+@media print {
+  header, footer, #workbench-section, .no-print {
+    display: none !important;
+  }
+  body, #scorecard-section {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
